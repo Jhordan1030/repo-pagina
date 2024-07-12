@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Suelos</title>
+    <link rel="stylesheet" href="../css/style_registro.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="user-info">
+                <span>Registrarse</span>
+                <a href="#">Inicio Sesión</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro_suelos.html">Registro de Suelos</a></li>
+            <li><a href="tipos_de_suelos.html">Tipo de Suelos</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <main>
+            <section class="progress-bar">
+                <div class="step completed">Datos del Suelo</div>
+                <div class="step">Características</div>
+                <div class="step">Ubicación</div>
+                
+            </section>
+            <section class="form-section">
+                <h2>Registro de Suelos</h2>
+                <p class="help-text">SI USTED REQUIERE AYUDA COMUNÍQUESE AL 0989040826</p>
+                <form>
+                    <div class="form-group">
+                        <label for="tipo-suelo">Tipo de Suelo</label>
+                        <select id="tipo-suelo" name="tipo-suelo">
+                            <option value="arenoso">Arenoso</option>
+                            <option value="arcilloso">Arcilloso</option>
+                            <option value="limoso">Limoso</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ph-suelo">pH del Suelo</label>
+                        <input type="text" id="ph-suelo" name="ph-suelo">
+                    </div>
+                    <div class="form-group">
+                        <label for="nitrogeno">Nivel de Nitrógeno</label>
+                        <input type="text" id="nitrogeno" name="nitrogeno">
+                    </div>
+                    <div class="form-group">
+                        <label for="fosforo">Nivel de Fósforo</label>
+                        <input type="text" id="fosforo" name="fosforo">
+                    </div>
+                    <div class="form-group">
+                        <label for="potasio">Nivel de Potasio</label>
+                        <input type="text" id="potasio" name="potasio">
+                    </div>
+                    <div class="form-group">
+                        <label for="foto-suelo">Subir Foto del Suelo</label>
+                        <input type="file" id="foto-suelo" name="foto-suelo" accept="image/*">
+                    </div>
+                    <div class="button-group">
+                        
+                        <a href="caracteristicas.html" class="back-button">Sigiente</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+

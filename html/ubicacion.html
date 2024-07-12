@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ubicación de Suelo</title>
+    <link rel="stylesheet" href="../css/style_ubicacion.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="user-info">
+                <span>Registrarse</span>
+                <a href="#">Inicio Sesión</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro_suelos.html">Registro de Suelos</a></li>
+            <li><a href="tipos_de_suelos.html">Tipo de Suelos</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <main>
+            <section class="progress-bar">
+                <div class="step completed">Datos del Suelo</div>
+                <div class="step completed">Características</div>
+                <div class="step">Ubicación</div>
+            </section>
+            <section class="form-section">
+                <h2>Ubicación del Suelo</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="pais">País</label>
+                        <input type="text" id="pais" name="pais" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="region">Región/Estado/Provincia</label>
+                        <input type="text" id="region" name="region">
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad/Municipio</label>
+                        <input type="text" id="ciudad" name="ciudad">
+                    </div>
+                    <div class="form-group">
+                        <label for="latitud">Latitud</label>
+                        <input type="text" id="latitud" name="latitud">
+                    </div>
+                    <div class="form-group">
+                        <label for="longitud">Longitud</label>
+                        <input type="text" id="longitud" name="longitud">
+                    </div>
+                    <div class="form-group">
+                        <label for="altitud">Altitud</label>
+                        <input type="text" id="altitud" name="altitud">
+                    </div>
+                    <div class="button-group">
+                        <a href="#" class="next-button">Siguiente</a>
+                        <a href="caracteristicas.html" class="back-button">Volver</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
