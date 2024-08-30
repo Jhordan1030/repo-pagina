@@ -15,7 +15,8 @@ window.onload = function() {
             const saldoActual = parseFloat(document.getElementById('saldo').innerText);
             const  nuevoSaldo = saldoActual + montoDeposito;
             document.getElementById('saldo').innerText = nuevoSaldo.toFixed(2);
-            document.getElementById('deposito').value = '';        
+            document.getElementById('deposito').value = ''; 
+            alert(`Has depositado: $${montoDeposito.toFixed(2)}`);
         }else{
             alert('Ingrese un monto válido para depositar.')
         }
@@ -29,6 +30,7 @@ window.onload = function() {
                 const  nuevoSaldo = saldoActual - montoRetiro;
                 document.getElementById('saldo').innerText = nuevoSaldo.toFixed(2);
                 document.getElementById('retiro').value = '';  
+                alert(`Has retirado: $${montoRetiro.toFixed(2)}`);
             }else{
                 alert('Saldo insuficiente.')  
             }    
